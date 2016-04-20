@@ -1,11 +1,12 @@
-##Linear Probing:
-  1. Hash to key
-  2. If address is open, insert elt
-  3. Else, go to next address.
-  4. Repeat from step 2 until inserted
-  
-  ###Pros: Quick and Dirty. Good Caching
-  ###Cons: Clustering
+#Linear Probing:
+>##Logic
+	1. Hash to key
+	2. If address is open, insert elt
+	3. Else, go to next address.
+	4. Repeat from step 2 until inserted
+
+>>###Pros: 	Quick and Dirty. Good Caching
+>>###Cons: 	Clustering
 
 ##Quadratic Probing
   1. Hash to key h(key)
@@ -14,8 +15,8 @@
   4. Else, increment j and compute h(key) + j2 % M (where M is size of table)
   5. Repeat from Step 3 until insertion
   
-  ###Pros: more efficient algorithm in a closed hash table, since it better avoids the clustering problem that can occur with linear probing, although it is not immune. It also provides good memory caching because it preserves some locality of reference
-  ###Cons: linear probing has greater locality and, thus, better cache performance.
+  ####Pros: more efficient algorithm in a closed hash table, since it better avoids the clustering problem that can occur with linear probing, although it is not immune. It also provides good memory caching because it preserves some locality of reference
+  ####Cons: linear probing has greater locality and, thus, better cache performance.
   
 ##Double Hashing
 
