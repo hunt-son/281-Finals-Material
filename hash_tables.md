@@ -1,5 +1,5 @@
 #Linear Probing:
->##Logic
+>###Logic
 	1. Hash to key
 	2. If address is open, insert elt
 	3. Else, go to next address.
